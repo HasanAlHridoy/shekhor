@@ -6,15 +6,14 @@ import 'package:get/get.dart';
 import '../../../../widgets/bottom_navigation.dart';
 import '../../../../widgets/carousel.dart';
 import '../../../../widgets/reuable_card.dart';
+import '../../login/views/login_view.dart';
 import '../controllers/home_controller.dart';
-
-import 'package:carousel_slider/carousel_slider.dart';
 
 class HomeView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xffF3E4B9),
+        backgroundColor: Color(0xffFAF9F6),
         body: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.only(top: 48.0, right: 16, left: 16),
@@ -64,6 +63,9 @@ class HomeView extends GetView<HomeController> {
                       icon: FontAwesomeIcons.video,
                       color: Colors.redAccent,
                       iconLabel: 'লাইভ ক্লাস ভিডিও',
+                      onPressed: () => Get.to(
+                        LoginView(),
+                      ),
                     ),
                   ),
                 ],
