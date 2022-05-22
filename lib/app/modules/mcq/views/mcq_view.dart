@@ -1,13 +1,12 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'package:get/get.dart';
+import 'package:shikhor/widgets/login_textfield.dart';
 
-import '../../../../widgets/login_textfield.dart';
-import '../controllers/login_controller.dart';
+import '../controllers/mcq_controller.dart';
 
-class LoginView extends GetView<LoginController> {
+class McqView extends GetView<McqController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
